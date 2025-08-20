@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100vw;
+}
+
+.the-head{
+    position: relative;
+}
+
+.navigation{
+    width: 100%;
+    position: relative;
+}
+ 
+.hamburger{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-list.links{
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.close-button{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* .my-profile-picture{
+   
+}
+
+.about-me {
+   
+}
+
+.personal-summary{
+    
+}
+
+.personal-summary p{
+
+}
+
+.personal-summary a{
+
+    
+} */
+
+@media screen and (min-width: 768px){
+    .navigation{
+    position: absolute;
+    z-index: 1;
+}
+
+.my-profile-picture{
+    /* position: absolute; */
+    width: 50%;
+    height: auto;
+    right: 0;
+    clip-path: polygon(100% 0%, 100% 100%, 50% 100%, 0% 0%);  
+    /* clip-path: polygon(0 0, 80% 20%, 80% 80%, 0% 80%); */
+}
+
+.about-me {
+    display: flex;
+    /* width: 100vw; */
+    /* height: 500px; */
+    /* position: relative; */
+    z-index: -1;
+    top: 0;
+}
+
+.personal-summary{
+    /* width: 100%; */
+    padding: 20px 0 50px 50px;
+    background-color: black;
+    color: white;
+}
+
+.personal-summary p{
+    /* width: 800px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.personal-summary a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+}
