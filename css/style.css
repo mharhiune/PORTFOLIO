@@ -1,0 +1,47 @@
+:root{
+    --heading-font: "Times New Roman";
+    --heading-font-weight: 600;
+    --heading-line-height: 1.2px;
+    --heading-color: black;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    line-height: var(--heading-line-height);
+    color: var(--heading-color);
+}
+
+/* a-one-page-menu */
+#a-one-page-menu .listy {
+    position: relative;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+    color: black;
+    border-bottom: 1px solid var(grey);
+}
+
+/* mam-text-1 */
+#mam-text-1 {
+    font-family: var(--heading-font);
+    font-weight: var(1000);
+    line-height: var(1.5px);
+    color: var(yellow);
+} 
+
+
+/* column-1 */
+.column-1 {
+    font-family: var(--heading-font);
+    font-weight: var(1000);
+    line-height: var(1.5px);
+    color: var(black);
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    line-height: var(--heading-line-height);
+    color: var(--heading-color);
+}
