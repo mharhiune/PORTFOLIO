@@ -1,0 +1,426 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.95);
+    z-index: 1000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f0c05a;
+}
+
+.vertical-menu {
+    display: flex;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu-list li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+    color: #f0c05a;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.column-1 {
+    flex: 1;
+    min-width: 300px;
+}
+
+.column-2 {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Home Section */
+.mm-home {
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.image-1 img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-text-1 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f0c05a;
+    margin-bottom: 15px;
+}
+
+.image-text-1 .name-text {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.image-text-1 p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    max-width: 500px;
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f0c05a;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #d9a940;
+    transform: translateY(-2px);
+}
+
+/* About Section */
+.about-text {
+    font-size: 1.3rem;
+    color: #f0c05a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.edu-text, .exp-text {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.edu-text:hover, .exp-text:hover {
+    transform: translateY(-5px);
+}
+
+.edu-text span, .exp-text span {
+    color: #f0c05a;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.edu-text h3, .exp-text h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.edu-text p, .exp-text p {
+    color: #b0b0b0;
+    font-size: 1rem;
+}
+
+/* Interests and References */
+.int-list, .ref-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.int-list li, .ref-list li {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.int-list li::before, .ref-list li::before {
+    content: '→';
+    color: #f0c05a;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Biodata and Skills */
+.bio-text table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bio-text th, .bio-text td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.bio-text th {
+    color: #f0c05a;
+    font-weight: 600;
+    width: 30%;
+}
+
+.ski-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ski-list li {
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.ski-list li:hover {
+    background-color: #f0c05a;
+    color: #121212;
+}
+
+/* Project Gallery */
+.Gallery-Swipe {
+    padding: 20px 0;
+}
+
+.Swipe-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.Slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-holder img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Slider:hover .image-holder img {
+    transform: scale(1.05);
+}
+
+.img-cap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+.img-cap span {
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+/* Personal Summary */
+.personal-summary {
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.personal-summary h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0c05a;
+    margin-bottom: 20px;
+}
+
+.personal-summary p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.personal-summary a {
+    color: #f0c05a;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #f0c05a;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.personal-summary a:hover {
+    background-color: #f0c05a;
+    color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .column-1, .column-2 {
+        min-width: 100%;
+    }
+
+    .image-text-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .Swipe-Container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .vertical-menu {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #121212;
+        padding: 20px;
+    }
+
+    .vertical-menu.active {
+        display: block;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .mm-home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-1 img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .image-text-1 h1 {
+        font-size: 2rem;
+    }
+
+    .image-text-1 .name-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 60px 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .edu-text h3, .exp-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .image-holder img {
+        height: 200px;
+    }
+}
